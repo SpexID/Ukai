@@ -1,0 +1,46 @@
+.falling-text-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 400;
+  font-size: 32px; /* default xs */
+}
+
+/* sm breakpoint */
+@media (min-width: 600px) {
+  .falling-text-container {
+    font-size: 45px;
+  }
+}
+
+/* md breakpoint */
+@media (min-width: 900px) {
+  .falling-text-container {
+    font-size: 60px;
+  }
+}
+
+.falling-text-target {
+  display: inline-block;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 2px;
+  user-select: none;
+}
+
+.highlighted {
+  color: #64483D;
+  font-weight: bold;
+}
+
+.falling-text-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

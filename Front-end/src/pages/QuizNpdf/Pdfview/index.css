@@ -1,0 +1,28 @@
+/* index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #000; /* full black */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* agar iframe/embed memenuhi container tanpa whitespace */
+.pdf-viewer-root {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+/* container yang menjaga responsive height termasuk safe-area di iOS */
+.pdf-frame-wrapper {
+  width: 100%;
+  height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
